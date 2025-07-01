@@ -22,3 +22,7 @@ Este portfólio será atualizado regularmente à medida que eu aprender novas te
 - Adicionar interatividade com JavaScript.
 - Implementar um formulário de contato funcional.
 - Melhorar a responsividade para diferentes tamanhos de tela.
+  
+## Como Visualizar
+
+Você pode acessar a versão online do portfólio aqui: https://FR-BS.github.io
