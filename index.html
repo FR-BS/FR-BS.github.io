@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meu Portifolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#Sobre mim">Sobre mim</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
-                    <li><a href="#Habilidades">Habilidades</a></li>
-                    <li><a href="#Contato">Contato</a></li>
-            </nav>
-            <div class="Hero">
-                <h1>Olá eu sou Felipe</h1>
-                <P>Estudante de programação | Em busca da primeira oportunidade</P>
-                <a href="projetos" class="btn">Veja meus projetos></a>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <p>Sou um desenvolvedor iniciante procurando criar experiências digitais incríveis.</p>
+        <a href="#projetos">Ver Projetos</a>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <img src="file_00000000497461f7bd1d6d252d2b2d5c.png" alt="Minhafoto" class="foto-perfil">
+        <p>Olá! Sou um programador iniciante aprendendo HTML, CSS com o objetivo de chegar o full-stack. Gosto de criar interfaces limpas e funcionais, inspiradas em designs modernos.</p>
+        <p>Minhas habilidades incluem: Desenvolvimento Web, Design Responsivo e Animações (ainda estou aprendendo muitas coisas).</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+            <div class="projeto-card">
+                <h3>Projeto 1</h3>
+                <p>Um site simples criado com HTML e CSS. (onde você esta agora)</p>
             </div>
-        </header>
-        <main>
-            <section id="Sobre mim"></section>
-                <h2>Sobre mim</h2>
-                <p>Olá! Meu nome é Felipe, e estou iniciando minha jornada no mundo da programação. Atualmente, estou focado em aprender HTML e CSS para construir interfaces web responsivas e acessíveis. Sou apaixonado por resolver problemas e criar soluções com código.</p>
-                <p>Este portfólio é um dos meus primeiros projetos e está em constante evolução, assim como meu aprendizado!</p>
-            </section>
-            <section id="Projetos"></section>
-                <h2>Projetos</h2>
-                <div class="projeto-card">
-                    <h3>Projeto 1:</h3>
-                    <p>Aqui virá uma breve descrição do meu primeiro projeto. Por enquanto, estou focando na estrutura e design do meu portfólio.</p>
-                    <p><strong>Tecnologias utilizadas:</strong>HTML, CSS</p>
-                    <a href="#" class="btn-ver-projeto">Ver projeto (Em breve)</a>
-                    <a href="#" class="btn-ver-codigo">Ver código (Em breve)</a>
-                </div>
-                <div class="projeto-card">
-                    <h3>Projeto 2:</h3>
-                    <p>Esse é outro projeto que irei desenvolver e adicionar aqui.</p>
-                    <p><strong>Tecnologias utilizadas:</strong>HTML, CSS</p>
-                    <a href="#" class="btn-ver-projeto">Ver projeto (Em breve</a>
-                    <a href="#" class="btn-ver-codigo">Ver código (Em breve)</a>
-                </div>
-            </section>
-            <section id="Habilidades">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>HTML (Estudando)</li> 
-                    <li>CSS (Estudando)</li>
-                    <li>JavaScript (Em Breve)</li>
-                </ul>
-            </section>
-            <section id="Contato">
-                <h2>Contato</h2>
-                <p>Voce pode entrar em contato comigo via:</p>
-                <ul>
-                    <li>Email: <a href="mailto:frbs2612@gmail.com" target="_blank" rel="external">Meu Email</a></li>
-                    <li><img src="imagens/icone-linkedin.png" alt="logo linkedin"> Linkedin: <a href="https://www.linkedin.com/in/felipe-santos-8a4743344/" target="_blank" rel="external">Meu Linkedin</a></li>
-                    <li><img src="imagens/icone-github.png" alt="logo github"> GitHub: <a href="https://github.com/FR-BS" target="_blank" rel="external">Meu GitHub</a></li>
-                </ul>
-            </section>
-        </main>
-        <footer>&copy; 2025 Felipe Santos. Todos os direitos reservados.</footer>
-    </body>
-    </head>
+            <div class="projeto-card">
+                <h3>Projeto 2</h3>
+                <p>Uma aplicação interativa com JavaScript (Em breve...).</p>
+            </div>
+            <div class="projeto-card">
+                <h3>Projeto 3</h3>
+                <p>Um redesign inspirado no Material Design(Em breve...).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Quer colaborar ou saber mais? Envie uma mensagem!</p>
+        <div class="contato-links">
+            <a href="mailto:frbs2612@gmail.com" target="_blank" rel="external">Email</a>
+            <a href="https://www.linkedin.com/in/felipe-santos-8a4743344/" target="_blank" rel="external">LinkedIn</a>
+            <a href="https://github.com/FR-BS" target="_blank" rel="external">GitHub</a>
+        </div>
+    </section>
+    <footer>&copy; 2025 Felipe Santos. Todos os direitos reservados.</footer>
+</body>
 </html>
