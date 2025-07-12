@@ -16,8 +16,9 @@ nav {
   background-color: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -28,12 +29,32 @@ nav ul {
   gap: 2rem;
 }
 
+nav li {
+  position: relative;
+  }
+
 nav a {
   color: #5f6368;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
+  padding: 0.5rem 0;
   transition: color 0.3s;
+}
+
+nav a ::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #1a73e8;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+nav a:hover ::after {
+  width: 100%;
 }
 
 nav a:hover {
