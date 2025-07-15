@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav aria-label="Navegação principal">
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" aria-current="page">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" aria-label="Alternar modo escuro">
+            <label for="theme-switch"></label>
+        </div>
     </nav>
 
     <section id="home">
@@ -33,16 +37,22 @@
         <h2>Meus Projetos</h2>
         <div class="projetos-grid">
             <div class="projeto-card">
-                <h3>Projeto 1</h3>
-                <p>Um site simples criado com HTML e CSS. (onde você esta agora)</p>
+                <a href="https://github.com/FR-BS/FR-BS.github.io" class="projeto-link">
+                    <h3>Projeto 1</h3>
+                    <p>Um site simples criado com HTML e CSS. (onde você esta agora)</p>
+                </a>
             </div>
             <div class="projeto-card">
-                <h3>Projeto 2</h3>
-                <p>Uma aplicação interativa com JavaScript (Em breve...).</p>
+                <a href="#" class="projeto-link">
+                    <h3>Projeto 2</h3>
+                    <p>Uma aplicação interativa com JavaScript (Em breve...).</p>
+                </a>
             </div>
             <div class="projeto-card">
-                <h3>Projeto 3</h3>
-                <p>Um redesign inspirado no Material Design(Em breve...).</p>
+                <a href="#" class="projeto-link">
+                    <h3>Projeto 3</h3>
+                    <p>Um redesign inspirado no Material Design (Em breve...).</p>
+                </a>
             </div>
         </div>
     </section>
@@ -50,12 +60,23 @@
     <section id="contato">
         <h2>Entre em Contato</h2>
         <p>Quer colaborar ou saber mais? Envie uma mensagem!</p>
+        <form action="contato-form">
+            <input type="text" placeholder="Mome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
         <div class="contato-links">
             <a href="mailto:frbs2612@gmail.com" target="_blank" rel="external">Email</a>
             <a href="https://www.linkedin.com/in/felipe-santos-8a4743344/" target="_blank" rel="external">LinkedIn</a>
             <a href="https://github.com/FR-BS" target="_blank" rel="external">GitHub</a>
         </div>
     </section>
-    <footer>&copy; 2025 Felipe Santos. Todos os direitos reservados.</footer>
+<footer>&copy; 2025 Felipe Santos. Todos os direitos reservados.</footer>
+<script>
+    document.getElementById('theme-switch').addEventListener('change', function() {
+         document.body.dataset.theme = this.checked ? 'dark' : 'light';
+         });
+</script>
 </body>
 </html>
