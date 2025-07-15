@@ -279,9 +279,9 @@
   
  }
 
- .contato-form input,
- .contato-form textarea {
-  padding: 0.8;
+.contato-form input,
+.contato-form textarea {
+  padding: 0.8rem;
   border: 1px solid var(--link-color);
   border-radius: 8px;
   background-color: var(--card-bg);
