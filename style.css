@@ -42,10 +42,9 @@
    color: var(--text-color);
    line-height: 1.6;
    padding: 60px;
-   transition: background-color 0.3s, color 0.3s;
+   transition: background-color 0.3s ease, color 0.3s ease;
  }
 
- /* Navegação */
  nav {
    background-color: var(--nav-bg);
    box-shadow: var(--nav-shadow);
@@ -79,7 +78,6 @@
    display: inline-block;
  }
 
- /* Efeito de sublinhado animado a partir do centro */
  nav a::after {
    content: '';
    position: absolute;
