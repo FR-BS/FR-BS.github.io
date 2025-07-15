@@ -38,18 +38,21 @@
         <div class="projetos-grid">
             <div class="projeto-card">
                 <a href="https://github.com/FR-BS/FR-BS.github.io" class="projeto-link">
+                    <img src="imagens/projeto1.png" alt="Captura de tela do Projeto 1" class="projeto-img">
                     <h3>Projeto 1</h3>
-                    <p>Um site simples criado com HTML e CSS. (onde você esta agora)</p>
+                    <p>Um site simples criado com HTML e CSS. (onde você está agora)</p>
                 </a>
             </div>
             <div class="projeto-card">
-                <a href="#" class="projeto-link">
+                <a href="#" class="projeto-link disabled">
+                    <img src="https://via.placeholder.com/280x150" alt="Projeto 2 (em desenvolvimento)" class="projeto-img">
                     <h3>Projeto 2</h3>
                     <p>Uma aplicação interativa com JavaScript (Em breve...).</p>
                 </a>
             </div>
             <div class="projeto-card">
-                <a href="#" class="projeto-link">
+                <a href="#" class="projeto-link disabled">
+                    <img src="#" alt="Projeto 3 (em desenvolvimento)" class="projeto-img">
                     <h3>Projeto 3</h3>
                     <p>Um redesign inspirado no Material Design (Em breve...).</p>
                 </a>
@@ -57,23 +60,25 @@
         </div>
     </section>
 
-<section id="contato">
+    <section id="contato">
         <h2>Entre em Contato</h2>
         <p>Quer colaborar ou saber mais? Envie uma mensagem!</p>
-        <form class="contato-form" action="#" method="post">
+        <form class="contato-form" action="#" method="POST">
             <input type="text" name="name" placeholder="Nome" required>
             <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Mensagem"></textarea>
+            <textarea name="message" placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
-        
         <div class="contato-links">
             <a href="mailto:frbs2612@gmail.com" target="_blank" rel="external">Email</a>
             <a href="https://www.linkedin.com/in/felipe-santos-8a4743344/" target="_blank" rel="external">LinkedIn</a>
             <a href="https://github.com/FR-BS" target="_blank" rel="external">GitHub</a>
         </div>
     </section>
-    <footer>&copy; 2025 Felipe Santos. Todos os direitos reservados.</footer>
-    <script src="scrypt.js"></script>    
+
+    <footer>© 2025 Felipe Santos. Todos os direitos reservados.</footer>
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
